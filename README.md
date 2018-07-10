@@ -1,9 +1,5 @@
 # galaxmerchant-ruby
 
-Build Status Branch Master
-[![Build Status](https://travis-ci.org/luizimcpi/galaxmerchant-ruby.svg?branch=master)](https://travis-ci.org/luizimcpi/galaxmerchant-ruby)
-
-
 Install Ruby
 ```
 sudo apt-get install ruby-full (Ubuntu/Debian)
