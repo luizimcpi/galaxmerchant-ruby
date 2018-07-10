@@ -1,4 +1,4 @@
-require_relative 'libs/leitor_arquivos'
+require_relative 'libs/read_files'
 
 class Main
     Reader.read

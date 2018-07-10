@@ -7,7 +7,9 @@ class Reader
             end
         end
        else
-            puts "Você deve informar o nome do arquivo a ser aberto. Ex: ruby app.rb entrada.txt"
+            msg = "Você deve informar o nome do arquivo a ser aberto. Ex: ruby app.rb entrada.txt"
+            puts msg
+            return msg
        end
     end
 end
