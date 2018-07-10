@@ -18,5 +18,6 @@ gem install minitest
 
 Running Test
 ```
-ruby tests/read_files_test.rb
+specific: ruby tests/read_files_test.rb
+all tests: rake test 
 ```
