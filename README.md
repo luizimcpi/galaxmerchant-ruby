@@ -1,22 +1,22 @@
 # galaxmerchant-ruby
 
-# Install Ruby
+Install Ruby
 ```
 sudo apt-get install ruby-full (Ubuntu/Debian)
 https://rubyinstaller.org/ (Windows)
 ```
 
-# Running Application
+Running Application
 ```
 ruby app.rb entrada.txt
 ```
 
-# Tests
+Tests
 ```
 gem install minitest
 ```
 
-# Running Test
+Running Test
 ```
 ruby test/read_files_test.rb
 ```
