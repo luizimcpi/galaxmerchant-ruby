@@ -22,5 +22,5 @@ gem install minitest
 
 Running Test
 ```
-ruby test/read_files_test.rb
+ruby tests/read_files_test.rb
 ```
