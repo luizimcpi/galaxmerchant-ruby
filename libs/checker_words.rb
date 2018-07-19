@@ -16,7 +16,6 @@ class Checker
             end
         }
         return true
-       #return word.eql?("is") == false && word.eql?("how") == false && word.eql?("many") == false && word.eql?("much") == false && word.eql?("?") == false && word.eql?("Credits") == false
     end
 end
 
