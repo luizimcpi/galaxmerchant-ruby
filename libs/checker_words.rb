@@ -9,7 +9,14 @@ class Checker
         return false
     end
     def self.is_not_question_word(word)
-       return word.eql?("is") == false && word.eql?("how") == false && word.eql?("many") == false && word.eql?("much") == false && word.eql?("?") == false && word.eql?("Credits") == false
+        words_denied_array = ["is","how","many","much","Credits","?"]
+        words_denied_array.each { |denied_word|
+            if word.eql?(denied_word)
+                return false
+            end
+        }
+        return true
+       #return word.eql?("is") == false && word.eql?("how") == false && word.eql?("many") == false && word.eql?("much") == false && word.eql?("?") == false && word.eql?("Credits") == false
     end
 end
 
