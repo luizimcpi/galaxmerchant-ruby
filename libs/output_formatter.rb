@@ -2,7 +2,7 @@ require_relative 'checker_words'
 
 class OutputFormatter
     
-    def remove_unecessary_words(input)
+    def format_sentence(input)
         formatted_output = ""
         input_array = input.split
         input_array.each { |word|
