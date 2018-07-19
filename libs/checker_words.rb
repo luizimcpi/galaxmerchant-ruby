@@ -11,7 +11,7 @@ class Checker
             contains_question_word = true 
         end
         
-        words_allowed_array = ["glob","prok","pish","tegj","Silver","Gold","Iron","is","how","many","much","Credits","?"]
+        words_allowed_array = ["glob","prok","pish","tegj","Silver","Gold","Iron","is","how","many","much","Credits","?","I","V","X","L"]
         sentence_array = sentence.split
         
         sentence_array.each { |word_of_sentence|
@@ -20,8 +20,16 @@ class Checker
                 break
             end
         }
-    
-        return contains_question_word && contains_unrecognized_word == false
+        if contains_question_word == false && contains_unrecognized_word
+            return "error_without_msg"
+        end
+        if contains_question_word && contains_unrecognized_word == false
+            return "success"
+        end
+        if contains_question_word && contains_unrecognized_word
+            return "error_with_msg"
+        end
+
     end
 
     def self.is_unecessary_word(word)

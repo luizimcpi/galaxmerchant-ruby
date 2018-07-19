@@ -7,11 +7,14 @@ class Reader
             File.open(ARGV[0], 'r') do |arq|
             output = OutputGenerator.new
             while line = arq.gets
-                if Checker.contain_allowed_words(line)
+                if Checker.contain_allowed_words(line) == "success"
                     puts output.print(line)
                 end
-                if Checker.contain_allowed_words(line) == false
+                if Checker.contain_allowed_words(line) == "error_with_msg"
                     puts output.print_error
+                end
+                if Checker.contain_allowed_words(line) == "error_without_msg"
+                    puts ""
                 end
             end
         end
