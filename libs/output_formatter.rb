@@ -6,7 +6,7 @@ class OutputFormatter
         formatted_output = ""
         input_array = input.split
         input_array.each { |word|
-            if Checker.is_not_question_word(word)
+            if Checker.is_unecessary_word(word) == false
                 formatted_output.concat(word).concat(" ")
             end
         }

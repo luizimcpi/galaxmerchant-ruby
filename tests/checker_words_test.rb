@@ -20,4 +20,16 @@ class CheckerTest < Minitest::Test
         result = Checker.verify_main_words(test_sentence)
         assert_equal false, result
     end
+
+    def test_should_return_true_when_word_is_unecessary
+        test_word = "how"
+        result = Checker.is_unecessary_word(test_word)
+        assert_equal true, result
+    end
+
+    def test_should_return_false_when_word_is_necessary
+        test_word = "glob"
+        result = Checker.is_unecessary_word(test_word)
+        assert_equal false, result
+    end
 end

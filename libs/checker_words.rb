@@ -8,14 +8,14 @@ class Checker
         end
         return false
     end
-    def self.is_not_question_word(word)
+    def self.is_unecessary_word(word)
         words_denied_array = ["is","how","many","much","Credits","?"]
         words_denied_array.each { |denied_word|
             if word.eql?(denied_word)
-                return false
+                return true
             end
         }
-        return true
+        return false
     end
 end
 
