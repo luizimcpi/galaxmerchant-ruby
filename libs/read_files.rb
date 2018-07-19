@@ -13,9 +13,6 @@ class Reader
                 if Checker.contain_allowed_words(line) == "error_with_msg"
                     puts output.print_error
                 end
-                if Checker.contain_allowed_words(line) == "error_without_msg"
-                    puts ""
-                end
             end
         end
        else
