@@ -40,7 +40,6 @@ how many Credits is glob prok Silver ?
 how many Credits is glob prok Gold ?
 how many Credits is glob prok Iron ?
 how much wood could a woodchuck chuck if a woodchuck could chuck wood ?
-*Arquivo entrada.txt na raiz do projeto quando o programa solicitar apenas digite: entrada.txt
 ```
 ## Ouput Example
 ```
