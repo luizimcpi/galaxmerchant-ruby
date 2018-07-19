@@ -1,13 +1,29 @@
 class Checker
-    def self.verify_main_words(sentence)
-        if sentence.include? "how much" 
-            return true
+    def self.contain_allowed_words(sentence)
+        contains_question_word = false
+        contains_unrecognized_word = false
+
+        if sentence.include? "how much"
+            contains_question_word = true 
         end
-        if sentence.include? "how many" 
-            return true
+
+        if sentence.include? "how many"
+            contains_question_word = true 
         end
-        return false
+        
+        words_allowed_array = ["glob","prok","pish","tegj","Silver","Gold","Iron","is","how","many","much","Credits","?"]
+        sentence_array = sentence.split
+        
+        sentence_array.each { |word_of_sentence|
+            if words_allowed_array.include?(word_of_sentence) == false
+                contains_unrecognized_word = true
+                break
+            end
+        }
+    
+        return contains_question_word && contains_unrecognized_word == false
     end
+
     def self.is_unecessary_word(word)
         words_denied_array = ["is","how","many","much","Credits","?"]
         words_denied_array.each { |denied_word|

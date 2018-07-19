@@ -5,10 +5,13 @@ class Reader
     def self.read 
         if ARGV.size > 0
             File.open(ARGV[0], 'r') do |arq|
+            output = OutputGenerator.new
             while line = arq.gets
-                if Checker.verify_main_words(line)
-                    output = OutputGenerator.new
+                if Checker.contain_allowed_words(line)
                     puts output.print(line)
+                end
+                if Checker.contain_allowed_words(line) == false
+                    puts output.print_error
                 end
             end
         end
