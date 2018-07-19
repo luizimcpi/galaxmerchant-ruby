@@ -1,4 +1,5 @@
 require_relative 'checker_words'
+require_relative 'output_generator'
 
 class Reader
     def self.read 
@@ -6,7 +7,8 @@ class Reader
             File.open(ARGV[0], 'r') do |arq|
             while line = arq.gets
                 if Checker.verify_main_words(line)
-                    puts line
+                    output = OutputGenerator.new
+                    puts output.print(line)
                 end
             end
         end
