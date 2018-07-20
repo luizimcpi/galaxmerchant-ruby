@@ -17,10 +17,24 @@ class OutputFormatterTest < Minitest::Test
         assert_equal expected_result, result
     end
 
-    def test_should_sum_coin_array_with_variable_coins
+    def test_should_sum_coin_array_with_silver_variable_coin
         test_coins_array = ["glob", "prok", "Silver"]
         result = Calculator.sum_coin_symbols(test_coins_array)
         expected_result = "68"
+        assert_equal expected_result, result
+    end
+
+    def test_should_sum_coin_array_with_gold_variable_coin
+        test_coins_array = ["glob", "prok", "Gold"]
+        result = Calculator.sum_coin_symbols(test_coins_array)
+        expected_result = "57800"
+        assert_equal expected_result, result
+    end
+
+    def test_should_sum_coin_array_with_iron_variable_coin
+        test_coins_array = ["glob", "prok", "Iron"]
+        result = Calculator.sum_coin_symbols(test_coins_array)
+        expected_result = "782"
         assert_equal expected_result, result
     end
 
