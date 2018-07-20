@@ -58,15 +58,15 @@ class CheckerTest < Minitest::Test
         assert_equal true, result
     end
 
-    def test_should_return_false_when_word_is_not_a_variable_coin
+    def test_should_return_false_when_word_is_not_a_metal_coin
         test_word = "glob"
-        result = Checker.is_variable_coin_word(test_word)
+        result = Checker.is_metal_coin_word(test_word)
         assert_equal false, result
     end
 
     def test_should_return_true_when_word_is_silver_coin
         test_word = "Silver"
-        result = Checker.is_variable_coin_word(test_word)
+        result = Checker.is_metal_coin_word(test_word)
         assert_equal true, result
     end
 end

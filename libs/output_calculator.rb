@@ -9,6 +9,9 @@ class Calculator
 		sum = 0
 		last_number = 0
 		number_one = Number.new(1)
+		number_two = Number.new(2)
+		number_three = Number.new(3)
+		number_four = Number.new(4)
 		number_five = Number.new(5)
 		number_ten = Number.new(10)
 		number_fifty = Number.new(50)
@@ -59,6 +62,27 @@ class Calculator
 				last_number = number_fifty.value
 				number_one.default_sequence_times
 				number_ten.default_sequence_times
+			end
+			if coin.eql?("Silver")
+				# contains metal change value
+				# glob = 1
+				# prok = 2
+				# pish = 3
+				# tegj = 4
+				# Glob 1 * Glob 1 * Silver = 34
+				# Glob 1 * prok 2 * Silver = 68
+ 				sum = sum * 34
+			end
+			if coin.eql?("Gold")
+				#glob 1 * prok  2 * Gold = 57800
+				#57800/2
+				#Gold =  28900
+			end
+			if coin.eql?("Iron")
+				#glob 1 * prok 2 * Iron = 782
+				#782/2
+				#pish 1 * pish 10 * Iron 391 = 3910
+				#Iron 391
 			end
 		}
 		result = sum.to_s

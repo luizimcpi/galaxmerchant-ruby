@@ -7,7 +7,7 @@ class OutputFormatter
         formatted_output = ""
         input_array = input.split
         coin_array = Array.new
-        contains_variable_coin = false
+        contains_metal_coin = false
         input_array.each { |word|
             if Checker.is_coin_word(word)
                 coin_array.push word
@@ -15,8 +15,8 @@ class OutputFormatter
             if Checker.is_unecessary_word(word) == false
                 formatted_output.concat(word).concat(" ")
             end
-            if Checker.is_variable_coin_word(word)
-                contains_variable_coin = true
+            if Checker.is_metal_coin_word(word)
+                contains_metal_coin = true
             end
         }
         formatted_output.concat("is ") 
@@ -26,7 +26,7 @@ class OutputFormatter
             formatted_output.concat(value)
         end
 
-        if contains_variable_coin
+        if contains_metal_coin
             formatted_output.concat(" ").concat("Credits")
         end
 

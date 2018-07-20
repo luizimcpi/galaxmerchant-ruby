@@ -47,7 +47,7 @@ class Checker
         return coin_words_array.include?(word)
     end
 
-    def self.is_variable_coin_word(word)
+    def self.is_metal_coin_word(word)
         variable_coin_words_array = ["Silver","Gold","Iron"]
         return variable_coin_words_array.include?(word)
     end

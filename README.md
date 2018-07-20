@@ -12,7 +12,9 @@ https://rubyinstaller.org/ (Windows)
 
 ## Running Application
 ```
-ruby app.rb entrada.txt
+ruby app.rb entrada.txt (this is a default file located in the root directory of this project)
+or
+ruby app.rb path_to_file
 ```
 
 ## Tests
