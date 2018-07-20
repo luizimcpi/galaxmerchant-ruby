@@ -22,8 +22,7 @@ class OutputFormatter
         formatted_output.concat("is ") 
       
         if coin_array.empty? == false
-            calculator = Calculator.new
-            value = calculator.sum_coin_symbols(coin_array)
+            value = Calculator.sum_coin_symbols(coin_array)
             formatted_output.concat(value)
         end
 

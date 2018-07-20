@@ -2,7 +2,7 @@ require_relative './exceptions/sequence_number_exception'
 require_relative './model/number'
 
 class Calculator
-	def sum_coin_symbols(coin_array)
+	def self.sum_coin_symbols(coin_array)
 		result = ""
 		i = 0
 		sum = 0
