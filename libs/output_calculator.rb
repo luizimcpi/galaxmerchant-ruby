@@ -27,8 +27,13 @@ class Calculator
 				number_ten.default_sequence_times
 			end
 			if coin.eql?("prok")
+				if number_five.value > last_number 
+					sum = number_five.value - last_number
+				end
+				if number_five.value <= last_number
+					sum = sum + number_five.value
+				end
 				last_number = number_five.value
-				sum = sum + number_five.value
 				number_one.default_sequence_times
 				number_ten.default_sequence_times
 			end
@@ -45,8 +50,13 @@ class Calculator
 				number_one.default_sequence_times
 			end
 			if coin.eql?("tegj")
+				if number_fifty.value > last_number 
+					sum = number_fifty.value - last_number
+				end
+				if number_fifty.value <= last_number
+					sum = sum + number_fifty.value
+				end
 				last_number = number_fifty.value
-				sum = sum + number_fifty.value
 				number_one.default_sequence_times
 				number_ten.default_sequence_times
 			end
