@@ -38,4 +38,35 @@ class CheckerTest < Minitest::Test
         result = Checker.is_unecessary_word(test_word)
         assert_equal false, result
     end
+
+
+    def test_should_return_false_when_word_is_not_coin
+        test_word = "bla"
+        result = Checker.is_coin_word(test_word)
+        assert_equal false, result
+    end
+
+    def test_should_return_true_when_word_is_a_coin
+        test_word = "glob"
+        result = Checker.is_coin_word(test_word)
+        assert_equal true, result
+    end
+
+    def test_should_return_true_when_word_is_a_variable_coin
+        test_word = "Silver"
+        result = Checker.is_coin_word(test_word)
+        assert_equal true, result
+    end
+
+    def test_should_return_false_when_word_is_not_a_variable_coin
+        test_word = "glob"
+        result = Checker.is_variable_coin_word(test_word)
+        assert_equal false, result
+    end
+
+    def test_should_return_true_when_word_is_silver_coin
+        test_word = "Silver"
+        result = Checker.is_variable_coin_word(test_word)
+        assert_equal true, result
+    end
 end

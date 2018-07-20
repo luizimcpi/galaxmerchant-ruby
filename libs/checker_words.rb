@@ -41,5 +41,15 @@ class Checker
         }
         return false
     end
+
+    def self.is_coin_word(word)
+        coin_words_array = ["glob","prok","pish","tegj","Silver","Gold","Iron"]
+        return coin_words_array.include?(word)
+    end
+
+    def self.is_variable_coin_word(word)
+        variable_coin_words_array = ["Silver","Gold","Iron"]
+        return variable_coin_words_array.include?(word)
+    end
 end
 
