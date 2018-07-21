@@ -61,13 +61,14 @@ class Calculator
 				number_ten.default_sequence_times
 			end
 			if coin.eql?("Silver")
-	
+				sum = sum * 17
 			end
 			if coin.eql?("Gold")
-		
+				sum = sum * 14450
 			end
 			if coin.eql?("Iron")
-				
+				sum = sum * 195.5
+				sum = sum.to_i
 			end
 		}
 		result = sum.to_s
