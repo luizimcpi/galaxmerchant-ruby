@@ -12,6 +12,9 @@ class Calculator
 		number_five = Number.new(5)
 		number_ten = Number.new(10)
 		number_fifty = Number.new(50)
+		silver_metal_number = Number.new(17)
+		gold_metal_number = Number.new(14450)
+		iron_metal_number = Number.new(195.5)
 		coin_array.each { |coin|
 			if coin.eql?("glob")
 				if is_number_repeated_more_than_three_times(number_one, last_number)
@@ -61,13 +64,13 @@ class Calculator
 				number_ten.default_sequence_times
 			end
 			if coin.eql?("Silver")
-				sum = sum * 17
+				sum = sum * silver_metal_number.value
 			end
 			if coin.eql?("Gold")
-				sum = sum * 14450
+				sum = sum * gold_metal_number.value
 			end
 			if coin.eql?("Iron")
-				sum = sum * 195.5
+				sum = sum * iron_metal_number.value
 				sum = sum.to_i
 			end
 		}
