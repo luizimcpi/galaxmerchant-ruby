@@ -1,13 +1,13 @@
-# galaxmerchant-ruby
+# Merchant Guide To Galaxy
 
 Build Status Branch Master
 
 [![Build Status](https://travis-ci.org/luizimcpi/galaxmerchant-ruby.svg?branch=master)](https://travis-ci.org/luizimcpi/galaxmerchant-ruby)
 
-## Install Ruby
+## Dependencies
 ```
-sudo apt-get install ruby-full (Ubuntu/Debian)
-https://rubyinstaller.org/ (Windows)
+Ruby v.2.5.1
+minitest -> gem install minitest
 ```
 
 ## Running Application
@@ -15,11 +15,6 @@ https://rubyinstaller.org/ (Windows)
 ruby app.rb entrada.txt (this is a default file located in the root directory of this project)
 or
 ruby app.rb path_to_file
-```
-
-## Tests
-```
-gem install minitest
 ```
 
 ## Running Test

@@ -9,9 +9,6 @@ class Calculator
 		sum = 0
 		last_number = 0
 		number_one = Number.new(1)
-		number_two = Number.new(2)
-		number_three = Number.new(3)
-		number_four = Number.new(4)
 		number_five = Number.new(5)
 		number_ten = Number.new(10)
 		number_fifty = Number.new(50)
